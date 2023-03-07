@@ -24,6 +24,8 @@ public:
         long long end=INT_MAX;
         
         // Why min*totalTrips -> (Socho at worst case min wali bus hi sare trips karegi tum max * totalTrips bhi kar sakte ho lekin tumhe min time nikalna hai to min * totalTrips zayda fayde mand hai ultimately tumhe answer minimize karna hai)
+        // ek trip ka time[i] le raha to totalTrips ka time[i]*totalTrips lega
+        
         for(int i=0;i<time.size();i++){
             end=min(end,1ll*time[i]);
         }

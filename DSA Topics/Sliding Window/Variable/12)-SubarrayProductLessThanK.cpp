@@ -24,7 +24,7 @@ public:
                 i++;
             }
             
-            cnt+=j-i+1; // jab bhi bhi koi banda add karte ho to utne sab array ban jate hai proof upar hai
+            cnt+=j-i+1; // jab bhi bhi koi banda add karte ho to utne length ke sub array ban jate hai proof upar hai
             
             j++;
         }

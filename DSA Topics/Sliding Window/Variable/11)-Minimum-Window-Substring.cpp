@@ -42,6 +42,11 @@ public:
             // Do stuff
             mp[s[j]]--;
             
+            // Agar ye doubt hai ki maine mp.find ni kiya agar s[j] hoga tabhi to cnt bhadega to socho bhai 
+
+            // mp[s[j]]==0 kab hoga jab kisi chaacter ke freq 0 se zyda hogi jo ki sirf t wale characters ki hi hai baaki sabki <0 ho jaegi 
+            // aur unlogon ka zero ki tension neeche wale loop main hai jahan koi cnt ni bhadh raha
+            
             if(mp[s[j]]==0){ // 0 signify that we have included all characters of s[j]
                 cnt++; 
             }
